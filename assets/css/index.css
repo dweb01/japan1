@@ -1,0 +1,75 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.line1{
+  height: 0.1px;
+  width: 100%;
+  background: #d1d5db ;
+}
+
+ul.ul2 {
+  list-style: none;
+}
+ul.ul2 li::before {
+  content: "";
+  position: absolute;
+  left: -25px;
+  top: 2px;
+  width: 20px;
+  height: 20px;
+  background-image: url('./img/checkbox-circle-line.svg');  
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.text-anima {
+  color: #831afb;
+  animation: row-and-shrink 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+.text-anima.oren {
+  color: #1af0fb;
+}
+@keyframes row-and-shrink {
+  0% {
+      transform: scale(1);
+  }
+
+  50% {
+      transform: scale(1.2);
+  }
+
+  100% {
+      transform: scale(1);
+  }
+}
+
+.text-shadow {
+  text-shadow: rgb(255, 166, 24) 0px 0px 10px;
+}
+.bg-linear{
+  background: linear-gradient(90deg, #f408eb, #f97300);
+}
+.bg-linear2{
+  background-image: linear-gradient(94deg, #1be8eb, #af47ff);
+}
+.bg-linear3{
+  background-image: linear-gradient(87deg, #1be8eb, #4fdc47);
+}
+.bg-linear4{
+  background-image: linear-gradient(99deg, #f97300, #fbed21);
+}
+.bg-linear5{
+  background-color: #d111e6;
+    background-image: linear-gradient(96deg, #d111e6, #dc721b);
+}
+
+.bold{
+  color: #60a5fa ;
+}
+
+.textstyle {
+  -webkit-transform: rotate(180deg);
+  writing-mode: tb-rl;
+}
